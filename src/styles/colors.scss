@@ -1,0 +1,13 @@
+$primary-color: #153243;
+$secondary-color: #284b63;
+$tertiary-color: #b4b8ab;
+$primary-background: #eef0eb;
+$secondary-background: #cecece;
+
+:root {
+    --primary-color: $primary-color;
+    --secondary-color: $secondary-color;
+    --tertiary-color: $tertiary-color;
+    --primary-background: $primary-background;
+    --secondary-background: $secondary-background;
+}
