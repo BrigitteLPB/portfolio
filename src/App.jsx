@@ -23,6 +23,7 @@ export default function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/:id" element={<Home />} />
+                    <Route path="/hello" element={<Header />} />
                     <Route path="*" element={<Home />} />
                 </Routes>
             </Grid>
