@@ -17,7 +17,7 @@ export default function Footer() {
             }}
         >
             <Typography variant="body1">
-                Copyright - Theo Guillemaud - {new Date().getFullYear()}
+                Copyright - Théo Guillemaud - {new Date().getFullYear()}
             </Typography>
         </Grid>
     );

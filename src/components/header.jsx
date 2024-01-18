@@ -17,7 +17,7 @@ export default function Header() {
                 backgroundColor: theme.palette.primary.main,
             }}
         >
-            <ProfileImage></ProfileImage>
+            <ProfileImage size={50} removeSpace></ProfileImage>
             <BasicMenu links={[{ name: 'hello', link: '/hello' }]}></BasicMenu>
         </Grid>
     );

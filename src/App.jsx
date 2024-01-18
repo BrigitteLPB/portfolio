@@ -15,6 +15,7 @@ export default function App() {
             direction="column"
             justifyContent="flex-start"
             alignItems="stretch"
+            wrap="nowrap"
         >
             <Grid item>
                 <Header />

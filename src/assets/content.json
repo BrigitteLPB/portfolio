@@ -1,0 +1,51 @@
+{
+    "summary": {
+        "title": "Théo GUILLEMAUD",
+        "text": "Développeur de 22 ans avec presque 10 ans de curiosité pour l’informatique, je me suis spécialiser en développement web depuis 2 ans avec une appentence pour le backend.",
+        "links": [
+            {
+                "name": "Github",
+                "link": "https://github.com/BrigitteLPB/",
+                "iconName": "GitHub"
+            },
+            {
+                "name": "Linkedin",
+                "link": "https://www.linkedin.com/in/th%C3%A9o-guillemaud/",
+                "iconName": "LinkedIn"
+            }
+        ]
+    },
+    "about": {
+        "title": "A propos de moi",
+        "text": "J’ai fait 3 ans d’études à ESEO Angers où j’y ai appris les systèmes embarqués, le développement logiciel et web. Ma dernière année s’est déroulée en alternance avec Capgemini, j’ai pu maintenir et faire évoluer sur l’application JEE d’envergure et développer mes compétences de développeur. S’en est suivi une année pour me spécialiser en web via une alternance avec OpenClassrooms et Flatsy. Je me suis plu à faire du backend avec du python et AWS dans l’objectif de migrer une application à Scala vieille de 6 ans."
+    },
+    "projects": {
+        "title": "Projets",
+        "details": [
+            {
+                "id": "kasa",
+                "name": "Kasa",
+                "date": "oct. 2023",
+                "with": "OpenClassrooms",
+                "text": "",
+                "thumbnail": "projects/kasa/thumbnail.jpg"
+            },
+            {
+                "id": "mon-vieux-grimoire",
+                "name": "Mon Vieux Grimoire",
+                "date": "nov. 2023",
+                "with": "OpenClassrooms",
+                "text": "",
+                "thumbnail": "projects/mon-vieux-grimoire/thumbnail.jpg"
+            },
+            {
+                "id": "nina-carducci",
+                "name": "Nina Carducci",
+                "date": "juil. 2023",
+                "with": "OpenClassrooms",
+                "text": "",
+                "thumbnail": "projects/nina-carducci/thumbnail.jpg"
+            }
+        ]
+    }
+}
