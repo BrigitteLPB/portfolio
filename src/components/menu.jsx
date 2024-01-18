@@ -14,9 +14,12 @@ export default function BasicMenu({ links = [] }) {
     const handleClick = (event) => {
         setAnchorEl(event.currentTarget);
     };
-    const handleClose = (_, link) => {
+
+    const handleClose = (_, link = undefined) => {
         setAnchorEl(null);
-        return navigate(link);
+        if (link) {
+            return navigate(link);
+        }
     };
 
     return (
@@ -38,7 +41,9 @@ export default function BasicMenu({ links = [] }) {
                 }}
                 anchorEl={anchorEl}
                 open={open}
-                onClose={handleClose}
+                onClose={(event) => {
+                    handleClose(event);
+                }}
                 PaperProps={{
                     style: {
                         maxHeight: ITEM_HEIGHT * 4.5,

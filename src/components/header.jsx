@@ -1,10 +1,11 @@
 import { Grid } from '@mui/material/index';
+import { theme } from 'Theme';
 
 import BasicMenu from 'components/menu';
 import ProfileImage from 'components/profile_image';
 import 'styles/components/header.scss';
 
-function Header() {
+export default function Header() {
     return (
         <Grid
             className="header"
@@ -12,11 +13,12 @@ function Header() {
             direction="row"
             justifyContent="space-between"
             alignItems="center"
+            sx={{
+                backgroundColor: theme.palette.primary.main,
+            }}
         >
             <ProfileImage></ProfileImage>
             <BasicMenu links={[{ name: 'hello', link: '/hello' }]}></BasicMenu>
         </Grid>
     );
 }
-
-export default Header;
