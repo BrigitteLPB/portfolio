@@ -1,6 +1,9 @@
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 export const theme = createTheme({
+    typography: {
+        fontSize: '14',
+    },
     palette: {
         type: 'light',
         primary: {

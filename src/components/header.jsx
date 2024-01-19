@@ -1,9 +1,9 @@
 import { Grid } from '@mui/material/index';
 import { theme } from 'Theme';
 
-import BasicMenu from 'components/menu';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ProfileImage from 'components/profile_image';
-import 'styles/components/header.scss';
+import { Button } from '../../node_modules/@mui/material/index';
 
 export default function Header() {
     return (
@@ -17,8 +17,12 @@ export default function Header() {
                 backgroundColor: theme.palette.primary.main,
             }}
         >
-            <ProfileImage size={50} removeSpace></ProfileImage>
-            <BasicMenu links={[{ name: 'hello', link: '/hello' }]}></BasicMenu>
+            <Button href={'/'} sx={{ p: 0 }}>
+                <ArrowBackIcon sx={{ fill: theme.palette.primary.reverse }} />
+            </Button>
+            <Button href={'/'} sx={{ p: 0 }}>
+                <ProfileImage size={50} removeSpace left></ProfileImage>
+            </Button>
         </Grid>
     );
 }

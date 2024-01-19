@@ -4,7 +4,6 @@ import Home from 'pages/home/';
 
 import { Grid } from '@mui/material/index';
 import Footer from 'components/footer';
-import Header from 'components/header';
 import ProjectPage from 'pages/project/index';
 import 'styles/App.scss';
 
@@ -18,9 +17,7 @@ export default function App() {
             alignItems="stretch"
             wrap="nowrap"
         >
-            <Grid item>
-                <Header />
-            </Grid>
+            <Grid item></Grid>
             <Grid item xs>
                 <Routes>
                     <Route path="/projects/:id" element={<ProjectPage />} />

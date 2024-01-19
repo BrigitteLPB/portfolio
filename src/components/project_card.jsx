@@ -28,7 +28,7 @@ export default function ProjectCard({
                     <img alt={name} src={loadImage(imagePath)} />
                 </Grid>
                 <Grid item container className="card-info">
-                    <Grid item container direction="column" spacing={2}>
+                    <Grid item container direction="column">
                         <Grid item>
                             <Typography variant="subtitle1" fontWeight="bold">
                                 {name}

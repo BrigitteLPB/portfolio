@@ -6,107 +6,155 @@ import content from 'assets/content.json';
 import CompetenceCard from 'components/competence_card';
 import Links from 'components/links';
 import ProjectCard from 'components/project_card';
-import { Box } from '../../../node_modules/@mui/material/index';
 
 export default function Home() {
     const loadImage = (path) => require(`./../../assets/${path}`);
 
     return (
-        <div id="home-page">
-            <Typography variant="h3" color="primary">
-                {content.summary.title}
-            </Typography>
+        <Grid
+            id="home-page"
+            container
+            justifyContent="center"
+            sx={{ my: '20px', gap: '30px' }}
+        >
+            {/* summary */}
+            <Grid item container lg={8} sx={{ p: '10px' }}>
+                <Typography variant="h3" color="primary">
+                    {content.summary.title}
+                </Typography>
+                <Grid
+                    container
+                    direction="row"
+                    justifyContent="flex-start"
+                    alignItems="center"
+                >
+                    <Grid item xs={8} md={10}>
+                        <Typography variant="body1">
+                            {content.summary.text}
+                        </Typography>
+                        <Links links={content.summary.links} />
+                    </Grid>
+                    <Grid item>
+                        <ProfileImage size={100} left></ProfileImage>
+                    </Grid>
+                </Grid>
+            </Grid>
+            {/* about */}
             <Grid
+                item
                 container
-                direction="row"
-                justifyContent="flex-start"
-                alignItems="center"
+                justifyContent="center"
+                sx={{
+                    py: '20px',
+                    backgroundColor: theme.palette.primary.main,
+                }}
             >
-                <Grid item xs={9}>
-                    <Typography variant="body1">
-                        {content.summary.text}
+                <Grid item container lg={8}>
+                    <Typography
+                        variant="h4"
+                        color="primary.reverse"
+                        className="left-bar-title"
+                    >
+                        {content.about.title}
                     </Typography>
-                    <Links links={content.summary.links} />
-                </Grid>
-                <Grid item xs>
-                    <ProfileImage size={100} left></ProfileImage>
+                    <Typography
+                        variant="body1"
+                        color="primary.reverse"
+                        sx={{ px: '20px' }}
+                    >
+                        {content.about.text}
+                    </Typography>
                 </Grid>
             </Grid>
+            {/* projects */}
             <Grid
-                sx={{
-                    backgroundColor: theme.palette.primary.main,
-                }}
-            >
-                <Typography
-                    variant="h4"
-                    color="primary.reverse"
-                    className="left-bar-title"
-                >
-                    {content.about.title}
-                </Typography>
-                <Typography variant="body1" color="primary.reverse">
-                    {content.about.text}
-                </Typography>
-            </Grid>
-            <Grid
+                item
                 container
+                lg={8}
                 direction="row"
                 justifyContent="flex-start"
                 alignItems="center"
                 sx={{
-                    gap: '10px',
+                    py: '20px',
                 }}
             >
-                {content.projects.details.map((e) => (
-                    <ProjectCard
-                        key={e.name}
-                        id={e.id}
-                        name={e.name}
-                        date={e.date}
-                        withActor={e.with}
-                        imagePath={e.thumbnail}
-                    />
-                ))}
-            </Grid>
-            <Box
-                sx={{
-                    backgroundColor: theme.palette.primary.main,
-                }}
-            >
-                <Typography
-                    variant="h4"
-                    color="primary.reverse"
-                    className="left-bar-title"
-                >
-                    Compétences techniques
-                </Typography>
-                <Grid container sx={{ width: '100%', gap: '20px' }}>
-                    {content.competences.map((e) => (
-                        <CompetenceCard
-                            key={e.title}
-                            name={e.title}
-                            description={e.description}
+                <Grid item>
+                    <Typography
+                        variant="h4"
+                        color="primary"
+                        className="left-bar-title"
+                    >
+                        {content.projects.title}
+                    </Typography>
+                </Grid>
+
+                <Grid item container sx={{ gap: '10px' }}>
+                    {content.projects.details.map((e) => (
+                        <ProjectCard
+                            key={e.name}
+                            id={e.id}
+                            name={e.name}
+                            date={e.date}
+                            withActor={e.with}
+                            imagePath={e.thumbnail}
                         />
                     ))}
                 </Grid>
-            </Box>
-            <Box>
-                <Typography
-                    variant="h4"
-                    color="primary"
-                    className="left-bar-title"
+            </Grid>
+            {/* competences */}
+            <Grid
+                item
+                container
+                justifyContent="center"
+                sx={{
+                    py: '20px',
+                    backgroundColor: theme.palette.primary.main,
+                }}
+            >
+                <Grid item container lg={8}>
+                    <Typography
+                        variant="h4"
+                        color="primary.reverse"
+                        className="left-bar-title"
+                    >
+                        Compétences techniques
+                    </Typography>
+                    <Grid container sx={{ width: '100%', gap: '20px' }}>
+                        {content.competences.map((e) => (
+                            <CompetenceCard
+                                key={e.title}
+                                name={e.title}
+                                description={e.description}
+                            />
+                        ))}
+                    </Grid>
+                </Grid>
+            </Grid>
+            {/* courses */}
+            <Grid item container lg={8} sx={{ px: '20px' }}>
+                <Grid item>
+                    <Typography
+                        variant="h4"
+                        color="primary"
+                        className="left-bar-title"
+                    >
+                        Expériences
+                    </Typography>
+                </Grid>
+                <Grid
+                    item
+                    container
+                    direction="column"
+                    sx={{ gap: '20px', py: '20px' }}
                 >
-                    Expériences
-                </Typography>
-                <Grid container sx={{ gap: '20px' }}>
                     {content.experiences.map((e, i) => (
-                        <Box key={i}>
+                        <Grid item xs key={i}>
                             <Typography variant="body1" fontWeight="bold">
                                 {e.title}
                             </Typography>
 
                             <Grid container>
-                                <Grid item xs={8}>
+                                <Grid item xs={12} sm={8}>
                                     {e.missions.map((mission, i) => (
                                         <Typography key={i} variant="body2">
                                             {'>'} {mission}
@@ -116,10 +164,11 @@ export default function Home() {
                                 <Grid
                                     item
                                     container
-                                    xs={4}
+                                    sm
                                     spacing={4}
                                     justifyContent="center"
                                     alignItems="flex=end"
+                                    sx={{ py: '10px' }}
                                 >
                                     {e.logos.map((logo, i) => (
                                         <Grid item>
@@ -136,10 +185,10 @@ export default function Home() {
                                     ))}
                                 </Grid>
                             </Grid>
-                        </Box>
+                        </Grid>
                     ))}
                 </Grid>
-            </Box>
-        </div>
+            </Grid>
+        </Grid>
     );
 }

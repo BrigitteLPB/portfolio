@@ -3,7 +3,6 @@
     margin: auto !important;
     max-width: 80%;
     min-width: 500px;
-    aspect-ratio: 2;
 
     & > div {
         border-radius: 30px;
@@ -26,6 +25,7 @@
         .card-info {
             min-height: 20%;
             margin: 10px 30px;
+            width: calc(100% - (30px * 2));
         }
     }
 }
