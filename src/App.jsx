@@ -5,6 +5,7 @@ import Home from 'pages/home/';
 import { Grid } from '@mui/material/index';
 import Footer from 'components/footer';
 import Header from 'components/header';
+import ProjectPage from 'pages/project/index';
 import 'styles/App.scss';
 
 export default function App() {
@@ -22,9 +23,7 @@ export default function App() {
             </Grid>
             <Grid item xs>
                 <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/:id" element={<Home />} />
-                    <Route path="/hello" element={<Header />} />
+                    <Route path="/projects/:id" element={<ProjectPage />} />
                     <Route path="*" element={<Home />} />
                 </Routes>
             </Grid>

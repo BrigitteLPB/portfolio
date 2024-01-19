@@ -1,20 +1,3 @@
-// import { Box, Grid, Typography } from "@mui/material/index";
-// import { theme } from "Theme";
-
-// export default function ProjectCard({name, date = '', withActor= '', imagePath = ''}) {
-//     const loadImage = path => (require(`./../assets/${path}`));
-
-//     return (
-//         <Grid item sx={{
-//             backgroundColor: theme.palette.primary.main,
-//         }}>
-//             <img src={loadImage(imagePath)} alt={name} />
-//             <Typography variant="body1">{name}</Typography>
-//             <Typography variant="body2">{'>'} {date} - {withActor}</Typography>
-//         </Grid>
-//     )
-// }
-
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import { theme } from 'Theme';
