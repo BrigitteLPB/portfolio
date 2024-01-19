@@ -68,23 +68,6 @@
         "title": "Projets",
         "details": [
             {
-                "id": "kasa",
-                "name": "Kasa",
-                "date": "oct. 2023",
-                "with": "OpenClassrooms",
-                "summary": "",
-                "text": "",
-                "thumbnail": "projects/kasa/thumbnail.jpg",
-                "links": [
-                    {
-                        "name": "Github",
-                        "link": "https://github.com/BrigitteLPB/",
-                        "iconName": "GitHub"
-                    }
-                ],
-                "competences": []
-            },
-            {
                 "id": "mon-vieux-grimoire",
                 "name": "Mon Vieux Grimoire",
                 "date": "nov. 2023",
@@ -95,7 +78,7 @@
                 "links": [
                     {
                         "name": "Github",
-                        "link": "https://github.com/BrigitteLPB/",
+                        "link": "https://github.com/BrigitteLPB/Openclassrooms-MonVieuxGrimoire",
                         "iconName": "GitHub"
                     }
                 ],
@@ -109,16 +92,39 @@
                 "name": "Nina Carducci",
                 "date": "juil. 2023",
                 "with": "OpenClassrooms",
-                "summary": "",
-                "text": "",
+                "summary": "Optimisation et débogage d’un site web",
+                "text": "Le site de Nina Carducci est un portfolio qui met en avant ses différentes créations photographiques. Il m’avait été demande de régler un bug présent sur le carrousel ainsi que d’optimiser ce site sur les aspects de la performance, le SEO et l’accessibilité. Après avoir statué l’état initial du site via des benchmarks de performances, d’accessibilités et de SEO, j’ai pu optimiser le site. Les images étaient clairement le point névralgique du projet car elle ralentissait un énormément le chargement du site web. L’optimisation a permis de réduire de 90% la taille des images. Le SEO consistait principalement à rajouter des métadonnées pour les différents robots tels que ceux de google ou twitter. Il était assez compliqué de comprendre comment fonctionnaient tel ou tel robot et le fichier qu’il demandait. Ce projet a été l’opportunité d’approfondir mes connaissances du web au-delà du développement. J’ai pu aussi comprendre la nécessité de penser aux optimisations potentielles lors de la phase de création du site, celles-ci peuvent s’avérer pour obtenir fonctionnelle et performante à la fin.",
                 "thumbnail": "projects/nina-carducci/thumbnail.jpg",
                 "links": [
                     {
                         "name": "Github",
-                        "link": "https://github.com/BrigitteLPB/",
+                        "link": "https://github.com/BrigitteLPB/nina-carducci.github.io",
                         "iconName": "GitHub"
                     }
+                ],
+                "competences": [
+                    "HTML, CSS et Javascript",
+                    "SEO",
+                    "Accessibilité",
+                    "Performance web"
                 ]
+            },
+            {
+                "id": "kasa",
+                "name": "Kasa",
+                "date": "oct. 2023",
+                "with": "OpenClassrooms",
+                "summary": "Développement fontend en ReacJS pour un site de présentation d’hôtels",
+                "text": "Intégrer au sein d’un projet, j’ai été chargé de créer le frontend d’un site web à partir de maquettes. C’est un site pour prendre voir des hôtels ainsi que les différentes informations qui vont avec, comme la note qui leur est attribuée. Mon principal défi a été de trouver comment traduire les maquettes en une structure de composants React suffisamment indépendants et compatible tablette, mobile et ordinateur. C’est grâce à cette organisation hiérarchique que j’ai pu réaliser ce projet rapidement. J’ai pu créer des composants réutilisables modulaires et facilement utilisables ce qui simplifiait largement le développement notamment pour le SCSS. Le backend n’étant pas présent au moment où je fais le site, j’ai là aussi dû faire face à un défi pour tester le site. Un jeu de données m’avait été donné et j’ai donc conçu en quelques lignes sur un serveur NodeJS un mock qui me permettait d’aller requêter le fichier comme si c’était un appel au vrai backend. Grâce à cette méthode j’ai pu créer le frontend du site web d'A à Z sans devoir ajouter de code « poubelle » dans l’application, ce code étant dans le mock.",
+                "thumbnail": "projects/kasa/thumbnail.jpg",
+                "links": [
+                    {
+                        "name": "Github",
+                        "link": "https://github.com/BrigitteLPB/OpenClassRoom-Kasa",
+                        "iconName": "GitHub"
+                    }
+                ],
+                "competences": ["Développement Frontend, ReactJS"]
             }
         ]
     }
