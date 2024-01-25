@@ -43,7 +43,9 @@
                 "Gestion de projets",
                 "CMS WordPress"
             ],
-            "logos": ["logos/eseo.png"]
+            "logos": [
+                "logos/eseo.png"
+            ]
         },
         {
             "title": "2022-2023 : Bachelor solutions numériques et connectées + apprentissage chez Capgemini",
@@ -51,7 +53,9 @@
                 "Développement full-stack en JEE",
                 "Analyse de problèmes"
             ],
-            "logos": ["logos/capgemini.png"]
+            "logos": [
+                "logos/capgemini.png"
+            ]
         },
         {
             "title": "2023 : formation développeur web OpenClassrooms + apprentissage chez Flatsy",
@@ -61,7 +65,10 @@
                 "Méthode agile",
                 "Optimisation et débogage de sites web"
             ],
-            "logos": ["logos/openclassrooms.png", "logos/flatsy.png"]
+            "logos": [
+                "logos/openclassrooms.png",
+                "logos/flatsy.png"
+            ]
         }
     ],
     "projects": {
@@ -73,8 +80,12 @@
                 "date": "nov. 2023",
                 "with": "OpenClassrooms",
                 "summary": "Développement backend en NodeJS pour gérer un site un de revues de livres",
-                "text": "Mon vieux grimoire est un site pour évaluer des livres. Les gens peuvent poster leurs livres et évaluer ceux des autres. Une sélection des meilleurs livres est aussi effectuée pour aider les utilisateurs à trouver leur prochaine lecture.Mon travail sur ce projet a été de réaliser de backend, le frontend étant déjà réalisé. La première contrainte était le stack technique : NodeJS avec Express et une base de données NoSQL MongoDB. J’ai fait le choix de m’orienter vers du Typescript au lieu du Javascript comme type de langage pour ses nombreux avantages quant à la qualité du code final. Afin de faciliter la qualité du compte, la bonne compréhension du projet et de réduire les temps de tests, mon premier réflexe a été de traduire les besoins fonctionnels de l’API backend en un document technique décrivant l’API final que le backend devra implémenter. Il s’agit d’un document suivant la norme OpenApi Specification 3.0 et que j’ai appelé le Swagger dans mon projet. Ce document est contrat entre les frontend et le backend et sans qui, rendrait le développement des 2 parties plus laborieuses.                Pour ce projet j’ai décidé de faire l’intégration avec frontend à la fin et de valider la qualité du code via des tests unitaires. J’ai donc fait le choix d’utiliser Jest, la librairie de tests pour NodeJS la plus rependu. Cette approche m’a forcé à découper mon code et mes étapes de développements en morceau indépendant et facilement testable même si cela restait assez compliqué. Par exemple les tests des endpoints sont assez complexes à tester car ils font appel de nombreuses fonctionnalités de l’application et nécessite donc une mise en contexte du test plus lourd.",
-                "thumbnail": "projects/mon-vieux-grimoire/thumbnail.jpg",
+                "texts": [
+                    "Mon vieux grimoire est un site pour évaluer des livres. Les gens peuvent poster leurs livres et évaluer ceux des autres. Une sélection des meilleurs livres est aussi effectuée pour aider les utilisateurs à trouver leur prochaine lecture.",
+                    "Mon travail sur ce projet a été de réaliser de backend, le frontend étant déjà réalisé. La première contrainte était le stack technique : NodeJS avec Express et une base de données NoSQL MongoDB. J’ai fait le choix de m’orienter vers du Typescript au lieu du Javascript comme type de langage pour ses nombreux avantages quant à la qualité du code final. Afin de faciliter la qualité du compte, la bonne compréhension du projet et de réduire les temps de tests, mon premier réflexe a été de traduire les besoins fonctionnels de l’API backend en un document technique décrivant l’API final que le backend devra implémenter. Il s’agit d’un document suivant la norme OpenApi Specification 3.0 et que j’ai appelé le Swagger dans mon projet. Ce document est contrat entre les frontend et le backend et sans qui, rendrait le développement des 2 parties plus laborieuses.",
+                    "Pour ce projet j’ai décidé de faire l’intégration avec frontend à la fin et de valider la qualité du code via des tests unitaires. J’ai donc fait le choix d’utiliser Jest, la librairie de tests pour NodeJS la plus rependu. Cette approche m’a forcé à découper mon code et mes étapes de développements en morceau indépendant et facilement testable même si cela restait assez compliqué. Par exemple les tests des endpoints sont assez complexes à tester car ils font appel de nombreuses fonctionnalités de l’application et nécessite donc une mise en contexte du test plus lourd."
+                ],
+                "thumbnail": "projects/mon-vieux-grimoire/thumbnail.png",
                 "links": [
                     {
                         "name": "Github",
@@ -93,7 +104,11 @@
                 "date": "juil. 2023",
                 "with": "OpenClassrooms",
                 "summary": "Optimisation et débogage d’un site web",
-                "text": "Le site de Nina Carducci est un portfolio qui met en avant ses différentes créations photographiques. Il m’avait été demande de régler un bug présent sur le carrousel ainsi que d’optimiser ce site sur les aspects de la performance, le SEO et l’accessibilité. Après avoir statué l’état initial du site via des benchmarks de performances, d’accessibilités et de SEO, j’ai pu optimiser le site. Les images étaient clairement le point névralgique du projet car elle ralentissait un énormément le chargement du site web. L’optimisation a permis de réduire de 90% la taille des images. Le SEO consistait principalement à rajouter des métadonnées pour les différents robots tels que ceux de google ou twitter. Il était assez compliqué de comprendre comment fonctionnaient tel ou tel robot et le fichier qu’il demandait. Ce projet a été l’opportunité d’approfondir mes connaissances du web au-delà du développement. J’ai pu aussi comprendre la nécessité de penser aux optimisations potentielles lors de la phase de création du site, celles-ci peuvent s’avérer pour obtenir fonctionnelle et performante à la fin.",
+                "texts": [
+                    "Le site de Nina Carducci est un portfolio qui met en avant ses différentes créations photographiques. Il m’avait été demande de régler un bug présent sur le carrousel ainsi que d’optimiser ce site sur les aspects de la performance, le SEO et l’accessibilité.",
+                    "Après avoir statué l’état initial du site via des benchmarks de performances, d’accessibilités et de SEO, j’ai pu optimiser le site. Les images étaient clairement le point névralgique du projet car elle ralentissait un énormément le chargement du site web. L’optimisation a permis de réduire de 90% la taille des images. Le SEO consistait principalement à rajouter des métadonnées pour les différents robots tels que ceux de google ou twitter. Il était assez compliqué de comprendre comment fonctionnaient tel ou tel robot et le fichier qu’il demandait.",
+                    "Ce projet a été l’opportunité d’approfondir mes connaissances du web au-delà du développement. J’ai pu aussi comprendre la nécessité de penser aux optimisations potentielles lors de la phase de création du site, celles-ci peuvent s’avérer pour obtenir fonctionnelle et performante à la fin."
+                ],
                 "thumbnail": "projects/nina-carducci/thumbnail.jpg",
                 "links": [
                     {
@@ -115,8 +130,12 @@
                 "date": "oct. 2023",
                 "with": "OpenClassrooms",
                 "summary": "Développement fontend en ReacJS pour un site de présentation d’hôtels",
-                "text": "Intégrer au sein d’un projet, j’ai été chargé de créer le frontend d’un site web à partir de maquettes. C’est un site pour prendre voir des hôtels ainsi que les différentes informations qui vont avec, comme la note qui leur est attribuée. Mon principal défi a été de trouver comment traduire les maquettes en une structure de composants React suffisamment indépendants et compatible tablette, mobile et ordinateur. C’est grâce à cette organisation hiérarchique que j’ai pu réaliser ce projet rapidement. J’ai pu créer des composants réutilisables modulaires et facilement utilisables ce qui simplifiait largement le développement notamment pour le SCSS. Le backend n’étant pas présent au moment où je fais le site, j’ai là aussi dû faire face à un défi pour tester le site. Un jeu de données m’avait été donné et j’ai donc conçu en quelques lignes sur un serveur NodeJS un mock qui me permettait d’aller requêter le fichier comme si c’était un appel au vrai backend. Grâce à cette méthode j’ai pu créer le frontend du site web d'A à Z sans devoir ajouter de code « poubelle » dans l’application, ce code étant dans le mock.",
-                "thumbnail": "projects/kasa/thumbnail.jpg",
+                "texts": [
+                    "Intégrer au sein d’un projet, j’ai été chargé de créer le frontend d’un site web à partir de maquettes. C’est un site pour prendre voir des hôtels ainsi que les différentes informations qui vont avec, comme la note qui leur est attribuée.",
+                    "Mon principal défi a été de trouver comment traduire les maquettes en une structure de composants React suffisamment indépendants et compatible tablette, mobile et ordinateur. C’est grâce à cette organisation hiérarchique que j’ai pu réaliser ce projet rapidement. J’ai pu créer des composants réutilisables modulaires et facilement utilisables ce qui simplifiait largement le développement notamment pour le SCSS.",
+                    "Le backend n’étant pas présent au moment où je fais le site, j’ai là aussi dû faire face à un défi pour tester le site. Un jeu de données m’avait été donné et j’ai donc conçu en quelques lignes sur un serveur NodeJS un mock qui me permettait d’aller requêter le fichier comme si c’était un appel au vrai backend. Grâce à cette méthode j’ai pu créer le frontend du site web d'A à Z sans devoir ajouter de code « poubelle » dans l’application, ce code étant dans le mock."
+                ],
+                "thumbnail": "projects/kasa/thumbnail.png",
                 "links": [
                     {
                         "name": "Github",
@@ -124,7 +143,9 @@
                         "iconName": "GitHub"
                     }
                 ],
-                "competences": ["Développement Frontend, ReactJS"]
+                "competences": [
+                    "Développement Frontend, ReactJS"
+                ]
             }
         ]
     }

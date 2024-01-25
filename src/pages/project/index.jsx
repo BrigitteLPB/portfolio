@@ -72,24 +72,23 @@ export default function ProjectPage() {
                     }}
                 >
                     <Grid item sm={8} sx={{ p: '10px' }}>
-                        <Typography
-                            variant="h5"
-                            color="primary.reverse"
-                            className="left-bar-title"
-                        >
-                            Compétences techniques
-                        </Typography>
                         {project_content.competences.map((e) => (
-                            <Typography variant="h6" color="primary.reverse">
+                            <Typography variant="subtitle1" fontWeight='bold' color="primary.reverse">
                                 {'>'} {e}
                             </Typography>
                         ))}
                     </Grid>
                 </Grid>
-                <Grid item sm={8} sx={{ px: '10px' }}>
-                    <Typography variant="body1">
-                        {project_content.text}
-                    </Typography>
+                <Grid item container sm={8} sx={{ px: '10px' }} spacing={3}>
+                    {
+                        project_content.texts.map((e, i) => (
+                            <Grid item key={i}>
+                                <Typography key={i} variant="body1">
+                                    {e}
+                                </Typography>
+                            </Grid>
+                        ))
+                    }
                 </Grid>
             </Grid>
         </Grid>

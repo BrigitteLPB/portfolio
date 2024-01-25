@@ -28,11 +28,15 @@ export default function Home() {
                     justifyContent="flex-start"
                     alignItems="center"
                 >
-                    <Grid item xs={8} md={10}>
-                        <Typography variant="body1">
-                            {content.summary.text}
-                        </Typography>
-                        <Links links={content.summary.links} />
+                    <Grid item container xs={8} md={10} spacing={3}>
+                        <Grid item>
+                            <Typography variant="body1">
+                                {content.summary.text}
+                            </Typography>
+                        </Grid>
+                        <Grid item>
+                            <Links links={content.summary.links} />
+                        </Grid>
                     </Grid>
                     <Grid item>
                         <ProfileImage size={100} left></ProfileImage>
@@ -54,6 +58,7 @@ export default function Home() {
                         variant="h4"
                         color="primary.reverse"
                         className="left-bar-title"
+                        sx={{marginBottom: '20px'}}
                     >
                         {content.about.title}
                     </Typography>
@@ -83,6 +88,7 @@ export default function Home() {
                         variant="h4"
                         color="primary"
                         className="left-bar-title"
+                        sx={{marginBottom: '20px', marginTop: '-20px'}}
                     >
                         {content.projects.title}
                     </Typography>
@@ -116,6 +122,7 @@ export default function Home() {
                         variant="h4"
                         color="primary.reverse"
                         className="left-bar-title"
+                        sx={{marginBottom: '20px'}}
                     >
                         Compétences techniques
                     </Typography>
@@ -131,7 +138,7 @@ export default function Home() {
                 </Grid>
             </Grid>
             {/* courses */}
-            <Grid item container lg={8} sx={{ px: '20px' }}>
+            <Grid item container lg={8}>
                 <Grid item>
                     <Typography
                         variant="h4"
@@ -145,7 +152,7 @@ export default function Home() {
                     item
                     container
                     direction="column"
-                    sx={{ gap: '20px', py: '20px' }}
+                    sx={{ gap: '20px', p: '20px' }}
                 >
                     {content.experiences.map((e, i) => (
                         <Grid item xs key={i}>
