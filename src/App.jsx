@@ -7,7 +7,14 @@ import Footer from 'components/footer';
 import ProjectPage from 'pages/project/index';
 import 'styles/App.scss';
 
+import React, { useEffect } from 'react';
+
 export default function App() {
+    // set page title
+    useEffect(() => {
+        document.title = 'Theo GUILLEMAUD\'s portfolio';
+    }, []);
+  
     return (
         <Grid
             className="app-grid"
